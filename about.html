@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean's Web</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="icon/dossier.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid p-4 mb-2 bg-info text-white">
+            <div class="container">
+                <h1 class="display-4">Sean's Web</h1>
+                <p class="lead">Welcome to Sean's first Web</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="alert alert-info" role="alert">
+            <!-- 選單 -->
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link nav1" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav2" href="story.html">故事</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav3" href="work_list.php">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav4" href="mood_list.php">日記</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav5" href="javascript:void(0)">關於我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav8" href="message.php">留言板</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav6" href="register.php">註冊</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav7" href="admin/login.php">登入</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="alert alert-success" role="alert">
+                  <center>
+                      <h1 class="alert-heading">關於我</h1>
+                  </center>
+                  <hr>
+                  <div class="col">
+                    <a href="#" class="story">
+                        <img src="images/about.JPG"  class="img-thumbnail" alt="首頁照片">
+                    </a>
+                  </div>
+                  <div class="col text-dark">
+                      <h4 class="mb-0">
+                          姓名:李旻軒
+                          <br>
+                          生日:1992/06/04
+                          <br>
+                          Email：<a href="hootshoot0604@gmail.com">hootshoot0604@gmail.com</a>
+                          <br>
+                          興趣:慢跑、籃球、游泳、旅行
+                      </h4>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="footer">
+      <div class="container">
+        <!-- 建立第一個 row 空間，裡面準備放格線系統 -->
+        <div class="row">
+          <!-- 在 xs 尺寸，佔12格，可參考 http://getbootstrap.com/css/#grid 說明-->
+          <div class="col">
+            <p class="text-center">
+              &copy;Sean's 版權所有 2019。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                //進網頁直接載入
+                $(".nav1").removeClass("active");
+                $(".nav5").addClass("active");
+                //滑鼠移入
+                $('ul a').mouseenter(function(){
+                        $('a').removeClass("active");
+                        $(this).addClass("active");
+                });
+
+                //滑鼠移出
+                $('ul a').mouseleave(function(){
+                    $(this).removeClass("active");
+                    $(".nav5").addClass("active");
+                });
+        }); //end ready
+
+
+        </script>
+</body>
+</html>
